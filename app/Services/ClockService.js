@@ -14,6 +14,11 @@ class ClockService {
             return time;
         }
     }
+    clockTemplate() {
+        return `
+        
+        `
+    }
 }
 
 const clockService = new ClockService();

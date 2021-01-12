@@ -14,8 +14,9 @@ export default class Todo {
     }
 
     return   `
-    <div class="card bg-transparent">
-                            <div class="card-body">
+    <div class="col-md-4 col-6 mt-3"
+    <div class="card">
+                            <div class="card-body bg-light">
                               <h4 class="card-title text-warning">${this.description}</h4>
                               <p>Finished: ${this.completed}</p>
                               <input ${isDone} type="checkbox" id="checkBox" name="done" onclick="app.todoController.toggleTodoStatus('${this.id}')">
@@ -23,7 +24,7 @@ export default class Todo {
                               <button type="button" class="btn btn-danger" onclick="app.todoController.removeTodo('${this.id}')">Remove</button>
                             </div>
                         </div>
-    
+    </div>
     `
   }
 }
