@@ -5,7 +5,6 @@ import { api } from "./AxiosService.js";
 //TODO create methods to retrieve data and save to the State
 class ImageService {
     async getImage() {
-        debugger
         let res = await api.get('images');
         console.log(res);
         ProxyState.images = new Image(res.data);

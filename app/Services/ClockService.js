@@ -1,6 +1,5 @@
 class ClockService {
     getClock() {
-        debugger
         let date = new Date();
         let hour = date.getHours();
         let min = date.getMinutes();

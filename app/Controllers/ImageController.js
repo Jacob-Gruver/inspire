@@ -2,7 +2,6 @@ import { ProxyState } from "../AppState.js";
 import imageService from "../Services/ImageService.js";
 
 function _drawImage() {
-    debugger
     document.body.style.backgroundImage = ProxyState.images.imageBackround;
     
 }
